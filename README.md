@@ -1,3 +1,17 @@
+# Task Master
+Welcome to TaskManager, my first project with React! This simple task management application allows users to add and delete tasks, providing a streamlined way to organize daily activities.
+
+# Getting Started
+* Clone the repository.
+* Install dependencies using npm install.
+* Run the app with npm start.
+* Start managing your tasks efficiently!
+
+
+https://github.com/InciGulcinDY/taskMaster/assets/113159986/67f570ac-cfb3-4862-9b53-c5fd2a729cf3
+
+
+------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
