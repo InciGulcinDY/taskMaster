@@ -7,7 +7,7 @@ function App() {
   const [task, setTask] = useState('');     //Defining task state, it initialized with an empty string ('') 
   const [tasks, setTasks] = useState([]);   //Defining task state array to collect all defined tasks
 
-  //Handling addition the new task
+  // Handling addition the new task
   const handleAddTask = () => {
     if (task.trim() !== '') {               //Checking whether the task is empty or not
       setTasks([...tasks, task]);           //Adding new task to the array
@@ -15,11 +15,13 @@ function App() {
     }
   };
 
-  //Handling deleting the task
+  // Handling deleting the task
   const handleDeleteTask = (index) => {     
     const updatedTasks = [...tasks];        //Defining new array to implement the current tasks after deleting
     updatedTasks.splice(index, 1);          //Removing task to be deleted from the tasks list
-    setTasks(updatedTasks);                 //Seting tasks array
+    setTasks(updatedTasks);   
+    
+    //Seting tasks array
   };
 
   return (
