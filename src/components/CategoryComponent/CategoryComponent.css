@@ -1,0 +1,18 @@
+#category_title{
+    color: var(--grey);
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+}
+
+.category_button{
+    border-radius: 12px;
+    background-color: var(--pureWhite);
+    color: var(--grey);
+    border: 1px solid var(--green);
+    font-family: var(--font-family-secondary);
+}
+
+.category_button:hover{
+    background-color: var(--green);
+    color: var(--pureWhite);
+};

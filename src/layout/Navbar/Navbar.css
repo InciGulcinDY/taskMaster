@@ -1,0 +1,33 @@
+#Navbar {
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+}
+
+.nav-link {    
+    text-decoration: none;
+    font-family: var(--font-family-primary);
+    font-size: clamp(1rem, 2.5vw, 1.5rem); 
+    
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+    text-decoration: underline;   
+}
+
+#logo {
+    max-width: 100%;
+    width: clamp(150px, 35vw, 600px); 
+    height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1000px) {
+    .nav-link {
+        margin-top: 10px;
+    }
+}

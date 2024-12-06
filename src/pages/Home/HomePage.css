@@ -1,0 +1,215 @@
+.hero_section {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;  
+    text-align: center;
+  } 
+
+.home_page_title{
+    font-family: var(--font-family-mono);  
+    color: var(--dark);
+    max-width: 100%;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    margin-top: 5%;
+}
+
+.home_page_subtitle{
+  font-family: var(--font-family-mono);
+  font-size: clamp(0.7rem, 3vw, 1.5rem);  
+  color: var(--dark);
+}
+
+.entry{
+  background-color: var(--light);
+  text-align: center;
+  color: var(--dark);
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+
+}
+.entry_title{
+  font-size: clamp(1rem, 3vw, 2rem);
+  font-family: var(--font-family-primary);  
+}
+.entry_subtitle{
+  font-size: clamp(0.6rem, 2vw, 1.3rem);
+  font-family: var(--font-family-secondary);  
+}
+/* Sectin One */
+.section_one{
+  background-color: var(--light);
+  color: var(--dark);
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start;  
+}
+.section_one_image{
+  height: 200px;
+  width: auto;
+  margin-left: 0%;
+  max-width: 80%;
+  margin-top: 2%;
+}
+.section_one_text{
+  margin-top: 6%;
+  margin-left: 2%;
+
+}
+.section_one_title{
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-family: var(--font-family-primary);  
+}
+
+.section_one_subtitle{
+  font-size: clamp(0.5rem, 3vw, 1.5rem); 
+  font-family: var(--font-family-secondary); 
+}
+
+/* Section Two*/
+.section_two{
+  color: var(--dark);
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;  
+}
+.section_two_image{
+  height: 200px;
+  width: auto;
+  max-width: 80%;
+  margin-top: 4%;
+}
+.section_two_text{
+  margin-top: 6%;
+  text-align: end;
+  max-width: 50%;
+}
+.section_two_title{
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-family: var(--font-family-primary); 
+}
+
+.section_two_subtitle{
+  font-size: clamp(0.5rem, 3vw, 1.5rem); 
+  font-family: var(--font-family-secondary); 
+}
+
+/* Section Three*/
+.section_three{
+  color: var(--dark);
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-start; 
+  margin-bottom: 150px;
+
+}
+.section_three_image{
+  height: 200px;
+  width: auto;
+  margin-left: 0%;
+  max-width: 80%;
+  margin-top: 2%;
+}
+.section_three_text{
+  margin-top: 6%;
+  margin-left: 2%;
+  max-width: 50%;
+
+}
+.section_three_title{
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-family: var(--font-family-primary);  
+}
+
+.section_three_subtitle{
+  font-size: clamp(0.5rem, 3vw, 1.5rem); 
+  font-family: var(--font-family-secondary); 
+}
+
+@media  (max-width: 1100px) {
+  .hero_section {
+    height: 300px;  
+  }
+  .home_page_title{
+    font-size: clamp(1rem, 5vw, 2rem);
+  }  
+  .home_page_subtitle{
+    font-size: small;
+  }
+  .section_one{
+    height: 300px;
+  }
+  
+  .section_one_image{
+    height: 150px;  
+  }
+
+}
+
+@media  (max-width: 700px) {
+  .hero_section {
+    height: 200px;  
+  }
+  .home_page_title{
+    font-size: 1.2rem;
+  }
+  .section_one{
+    height: 200px;
+  }
+  .section_one_image{
+    content-visibility: hidden;
+  }
+  .section_one_text{
+    margin-top: 0%;
+    max-width: 40%;
+  }
+}
+
+.section_one_image, .section_one_text, .section_three_text {
+  position: relative;
+  animation-name: slideInFromLeft;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.section_two_image, .section_two_text {
+  position: relative;
+  animation-name: slideInFromRight;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

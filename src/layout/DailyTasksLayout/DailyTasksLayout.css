@@ -1,0 +1,19 @@
+#daily_tasks_table{
+    width: 100%;
+    border: 1pz;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color: var(--yellow);}
+
+#daily_table_title{
+    background-color: var(--light);
+    height: 70px;
+}
+
+#daily_table_body{
+
+}

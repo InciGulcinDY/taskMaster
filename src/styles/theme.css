@@ -1,0 +1,14 @@
+:root{
+    --font-family-primary: 'League Spartan', sans-serif;
+    --font-family-secondary: 'Roboto Flex', sans-serif;
+    --font-family-mono: 'Space Mono', monospace;
+
+    --pureBlack: #000000;
+    --pureWhite: #FFFFFF;
+    --dark: #222831;
+    --grey: #393E46;
+    --light: #EEEEEE;
+    --yellow: #FFD369;
+    --green: #004A2F;
+
+}

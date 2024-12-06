@@ -1,0 +1,9 @@
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: var(--font-family-secondary); 
+}
+
+.footer_link{
+    color: var(--light);
+}
