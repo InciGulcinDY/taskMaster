@@ -1,4 +1,3 @@
-import { icons } from "../../utils/icons";
 import "./UnderConstructionLayout.css";
 
 const UnderConstructionLayout = () => {

@@ -2,8 +2,28 @@ footer{
     background-color: var(--dark);
     color: var(--light);
     font-family: var(--font-family-secondary); 
+    font-size: small;
 }
 
 .footer_link{
     color: var(--light);
+}
+
+.footer_icon{
+    width:15px;
+    height:15px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+@media  (max-width: 1100px) {
+    footer{
+        font-size: smaller;
+    }
+}
+
+@media  (max-width: 700px) {
+    footer{
+        font-size: x-small;
+    }
 }

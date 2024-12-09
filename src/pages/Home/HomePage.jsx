@@ -11,7 +11,7 @@ const HomePage = () => {
   const footerImage = "/assets/FooterImage.png";
 
   return (
-    <div className="container-fluid">
+    <div className="container">
       {/* Hero Image */}
       <div
         className="hero_section"
@@ -23,8 +23,8 @@ const HomePage = () => {
         }}
       >
         <div>
-          <h1 className="home_page_title">
-            For Planners, Dreamers, and Spreadsheet Warriors
+        <h1 className="home_page_title">
+            Manage Tasks and Lists Effortlessly
           </h1>
           <h5 className="home_page_subtitle">
             Turn Chaos Into Clarity—
@@ -68,7 +68,7 @@ const HomePage = () => {
           backgroundImage: `url(${sectionTwoBackground})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "right",
+          backgroundPosition: "left",
         }}
       >
         <div className="section_two_text">
@@ -96,8 +96,7 @@ const HomePage = () => {
             New Habits Begin with Perfectly Crafted Routines
           </h2>
           <p className="section_three_subtitle">
-            To build a new habit, define your routine and track your progress
-            with our planner.
+            To build a new habit, define your routine and track your progress with our planner.
           </p>
         </div>
       </section>
