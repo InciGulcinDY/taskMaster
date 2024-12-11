@@ -1,3 +1,13 @@
+#add_task_component{
+    background-color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
 .daily-task-title{
     text-align: center;
     color: var(--green);
@@ -15,6 +25,7 @@
     text-align: center;
     font-size: 16px;
     font-family: var(--font-family-secondary);
+    width: min-content;
   }
 
 .add-button:hover{

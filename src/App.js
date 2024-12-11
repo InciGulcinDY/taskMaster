@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { useState } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import DailyPage from "./pages/DailyPage/DailyPage";
 import Navbar from "./layout/Navbar/Navbar";
@@ -12,6 +11,8 @@ import WeeklyPage from "./pages/WeeklyPage/WeeklyPage";
 import { Provider } from "react-redux";
 import store from "./store/configureStore";
 import HomePage from "./pages/Home/HomePage";
+import 'react-time-picker/dist/TimePicker.css';
+
 
 function App() {
   return (

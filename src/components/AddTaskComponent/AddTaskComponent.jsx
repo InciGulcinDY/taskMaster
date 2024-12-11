@@ -2,32 +2,33 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addTask,
-  defineCategory,
-  defineSubject,
 } from "../../store/dailyTaskSlice";
 import './AddTaskComponent.css';
+import SubjectComponent from "../SubjectComponent/SubjectComponent";
+import CategoryComponent from "../CategoryComponent/CategoryComponent";
+import TimeSelection from "../TimeSelectionComponent/TimeSelectionComponent";
 
 const AddTaskComponent = () => {
   const dispatch = useDispatch();
 
   const [newTask, setNewTask] = useState("");
-
   const subject = useSelector((state) => state.dailyTask.subject);
   const category = useSelector((state) => state.dailyTask.category);
+  const time = useSelector((state) => state.dailyTask.time);
 
   const handleAddTask = () => {
     if (!newTask.trim() || !subject.trim() || !category.trim()) {
       alert("Please fill in all fields!");
       return;
     }
-    const task = { newTask, subject, category };
+    const task = { newTask, subject, category, time };
     dispatch(addTask(task));
     setNewTask("");
   };
 
   return (
-    <>
-      <div className="form-floating">
+
+      <div id="add_task_component" className="form-floating">
         <div className="row">
           {/* Titles */}
           <div className="daily-task-title col-12 text-center mb-2">
@@ -44,35 +45,21 @@ const AddTaskComponent = () => {
             ></textarea>
           </div>
           <div className="col-6 mt-2">
-            <div className="col-auto">
-              <label className="visually-hidden">Subject</label>
-              <input
-                type="text"
-                className="form-control"
-                id="autoSizingInput"
-                placeholder="Subject"
-                value={subject}
-                onChange={(e) => dispatch(defineSubject(e.target.value))}
-              />
-            </div>
+            <SubjectComponent />              
           </div>
           <div className="col-6 mt-2">
-            <label className="visually-hidden">Category</label>
-            <input
-              type="text"
-              className="form-control"
-              id="autoSizingInput"
-              placeholder="Category"
-              value={category}
-              onChange={(e) => dispatch(defineCategory(e.target.value))}
-            />
+            <CategoryComponent />
+          </div>
+          <div className="col-6 mt-2">
+            <TimeSelection />
           </div>
         </div>
-      </div>
-      <button className="add-button mt-2" onClick={handleAddTask}>
+        <button className="add-button mt-2" onClick={handleAddTask}>
         ADD
       </button>
-    </>
+      </div>
+
+
   );
 };
 

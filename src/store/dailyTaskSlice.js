@@ -6,6 +6,7 @@ export const dailyTaskSlice = createSlice({
     dailyTasks: [],
     subject: "",
     category: "",
+    time: null,
   },
   reducers: {
     addTask: (state, action) => {
@@ -21,10 +22,14 @@ export const dailyTaskSlice = createSlice({
       const category = action.payload;
       state.category = category;
     },
+    defineTime: (state, action) => {
+      const time = action.payload;
+      state.time = time;
+    },
   },
 });
 
-export const { addTask, defineSubject, defineCategory } =
+export const { addTask, defineSubject, defineCategory, defineTime } =
   dailyTaskSlice.actions;
 
 export default dailyTaskSlice.reducer;

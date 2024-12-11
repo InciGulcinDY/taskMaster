@@ -1,0 +1,11 @@
+#time_selection{
+    color: var(--dark);
+    
+}
+
+#time_picker{
+    width: 135%;
+    height: auto;
+    border-color: var(--light);
+    
+}
